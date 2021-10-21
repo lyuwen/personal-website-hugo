@@ -39,3 +39,4 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: lyuwen/lyuwen.github.io
           publish_dir: ./public
+          cname: www.lyuwenfu.me
