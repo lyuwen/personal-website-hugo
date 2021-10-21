@@ -34,6 +34,20 @@ we published. It will be released soon. Stay tuned.
   - Adviser: Professor Jiao Teng
 
 
+#### Research Experience
+
+- **Columbia University**, New York, New York
+  
+  Department of Applied Physics and Applied Mathematics {{< right >}} May 2016 - Sep 2021 {{< /right >}}
+    * Project:Thermodynamics of interactin gphonons
+    * Adviser: Professor Chris Marianetti
+    * Develop group theoretical approach to extract arbitrary order phonons and their interactions in terms of space group irreducible derivatives.
+    * Develop finite difference algorithm which extracts all irreducible derivatives in the smallest possible supercells with the fewest possible calculations.
+    * Develop software to compute thermaldynamic properties using the extracted phonon interaction data.
+    * Perform high-throughput computations on HPC clusters.
+    * Manage an in-house cluster of more than 80 nodes.
+
+
 #### Publications
 - **L. Fu**, M. Kornbluth, Z. Cheng, and C. A. Marianetti, Group theoretical approach to computing phonons and their interactions, _Phys. Rev. B_ 100, 014303 (2019). [[link](https://link.aps.org/doi/10.1103/PhysRevB.100.014303)] [[PDF](/files/PhysRevB.100.014303.pdf)]
 - X. Ding, T. Yao, **L. Fu**, Z. Hua, J. Harp, C.A. Marianetti, M. Neupane, M.E. Manley, D. Hurley, and K. Gofryk, Magnetic, transport and thermal properties of 𝛿-phase UZr2, _Phil. Mag. Lett._, 101(1), 1-11 (2020). [[link](https://doi.org/10.1080/09500839.2020.1833375)]
