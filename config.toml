@@ -11,6 +11,7 @@ info = ["Software Developer", "Condensed Matter Physics", "High-throughput Compu
 avatarURL = "images/lfu_logo_web@512.png"
 favicon_32 = "images/lfu_logo_web@32.png"
 favicon_16 = "images/lfu_logo_web@16.png"
+touchIcon = "images/lfu_logo_web@144.png"
 # gravatar = "fulvwen@gmail.com"
 # footerContent = "Enter a text here."
 dateFormat = "January 1, 2021"
