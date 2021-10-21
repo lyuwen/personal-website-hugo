@@ -16,18 +16,18 @@ we published. It will be released soon. Stay tuned.
 
 #### Education
 
-- **Columbia University**, New York, New York (Jan 2017 - Sep 2021) \
+- **Columbia University**, New York, New York {{< right >}} Jan 2017 - Sep 2021 {{< /right >}}\
   Ph.D. in Materials Science Materials Science
   - Advisor: Professor Chris Marianetti
   - Research Focus: Generic first-principle computation on phonons and phonon-phonon interactions
   - Thesis: Thermodynamics of Interacting Phonons
 
-- **Columbia University**, New York, New York (Aug 2015 – Dec 2016) \
+- **Columbia University**, New York, New York  {{< right >}} Aug 2015 – Dec 2016 {{< /right >}} \
   Master of Science in Materials Science
   - Cumulative GPA: 3.81/4.00
   - Coursework: Solid State Physics, Computing Electronic Structure of Complex Materials, Theory of Crystalline Materials, Mechanical Behavior of Materials, etc.
 
-- **University of Science and Technology Beijing**, Beijing, China (Aug 2011 – Jun 2015) \
+- **University of Science and Technology Beijing**, Beijing, China {{< right >}} Aug 2011 – Jun 2015 {{< /right >}} \
   Bachelor of Engineering in Materials Physics
   - Cumulative GPA: 3.46/4.00
   - Thesis: Research on the Quantum Transport Properties of Resistive RAM
