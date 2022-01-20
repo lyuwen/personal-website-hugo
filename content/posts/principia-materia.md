@@ -10,6 +10,7 @@ categories = []
 externalLink = ""
 series = []
 math = true
+featuredImage = "/images/pm_banner_web.png"
 +++
 
 Principia Materia (PM) is a materials computation and simulation package started with my advisor **Prof. Chris Marianetti** during my doctoral research.
