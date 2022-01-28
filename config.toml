@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Lyuwen Fu'
 theme = "coder"
 
+googleAnalytics = 'G-7C7Y626LWM'
+
 [params]
 author = "Lyuwen Fu"
 description = "Lyuwen Fu's personal website"
