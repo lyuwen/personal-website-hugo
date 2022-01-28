@@ -39,11 +39,11 @@ we published. It will be released soon. Stay tuned.
 - **Columbia University**, New York, New York
   
   Department of Applied Physics and Applied Mathematics {{< right >}} May 2016 - Oct 2021 {{< /right >}}
-    * Project:Thermodynamics of interactin gphonons
+    * Project: Thermodynamics of Interacting Phonons
     * Adviser: Professor Chris Marianetti
     * Develop group theoretical approach to extract arbitrary order phonons and their interactions in terms of space group irreducible derivatives.
     * Develop finite difference algorithm which extracts all irreducible derivatives in the smallest possible supercells with the fewest possible calculations.
-    * Develop software to compute thermaldynamic properties using the extracted phonon interaction data.
+    * Develop software to compute thermodynamic properties using the extracted phonon interaction data.
     * Perform high-throughput computations on HPC clusters.
     * Manage an in-house cluster of more than 80 nodes.
 
