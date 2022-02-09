@@ -12,7 +12,7 @@ series = []
 +++
 
 
-In this project, I built a CI/CD workflow with GitHub Actions to automatically build and deploy by CV to GitHub Pages when it's updated.
+In this project, I've built an CI/CD workflow with GitHub Actions to automatically build and deploy my CV to GitHub Pages whenever it's updated.
 
 
 ##### Docker Image of TeXLive
