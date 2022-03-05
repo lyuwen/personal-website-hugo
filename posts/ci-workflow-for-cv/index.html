@@ -18,8 +18,7 @@
 <meta property="article:modified_time" content="2022-02-09T00:53:33+08:00">
 <title>
 Building CI/CD workflow for my CV · Lyuwen Fu
-</title>
-<link rel=canonical href=https://lyuwenfu.me/posts/ci-workflow-for-cv/>
+</title><link rel=canonical href=https://lyuwenfu.me/posts/ci-workflow-for-cv/>
 <link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin>
 <link rel=stylesheet href=/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css integrity="sha256-2f3b/+byfmmYXcX+BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin=anonymous media=screen>
 <link rel=stylesheet href=/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin=anonymous media=screen>
@@ -27,15 +26,13 @@ Building CI/CD workflow for my CV · Lyuwen Fu
 <link rel=icon type=image/png href=/images/lfu_logo_web@16.png sizes=16x16>
 <link rel=apple-touch-icon href=/images/lfu_logo_web@144.png>
 <link rel=apple-touch-icon sizes=180x180 href=/images/lfu_logo_web@144.png>
-<meta name=generator content="Hugo 0.92.1">
-</head>
-<body class="preload-transitions colorscheme-auto">
+<meta name=generator content="Hugo 0.93.2">
+</head><body class="preload-transitions colorscheme-auto">
 <div class=float-container>
 <a id=dark-mode-toggle class=colorscheme-toggle>
 <i class="fa fa-adjust fa-fw" aria-hidden=true></i>
 </a>
-</div>
-<main class=wrapper>
+</div><main class=wrapper>
 <nav class=navigation>
 <section class=container>
 <a class=navigation-title href=/>
@@ -48,14 +45,9 @@ Lyuwen Fu
 <ul class=navigation-list>
 <li class=navigation-item>
 <a class=navigation-link href=/posts/>Projects</a>
-</li>
-<li class=navigation-item>
+</li><li class=navigation-item>
 <a class=navigation-link href=/about/>About</a>
-</li>
-</ul>
-</section>
-</nav>
-<div class=content>
+</li></ul></section></nav><div class=content>
 <section class="container post">
 <article>
 <header>
@@ -64,9 +56,7 @@ Lyuwen Fu
 <a class=title-link href=https://lyuwenfu.me/posts/ci-workflow-for-cv/>
 Building CI/CD workflow for my CV
 </a>
-</h1>
-</div>
-<div class=post-meta>
+</h1></div><div class=post-meta>
 <div class=date>
 <span class=posted-on>
 <i class="fa fa-calendar" aria-hidden=true></i>
@@ -78,11 +68,9 @@ February 9, 2022
 <i class="fa fa-clock-o" aria-hidden=true></i>
 3-minute read
 </span>
-</div>
-<div class=authors>
+</div><div class=authors>
 <i class="fa fa-user" aria-hidden=true></i>
-<a href=/authors/lyuwen-fu/>Lyuwen Fu</a></div>
-<div class=tags>
+<a href=/authors/lyuwen-fu/>Lyuwen Fu</a></div><div class=tags>
 <i class="fa fa-tag" aria-hidden=true></i>
 <span class=tag>
 <a href=/tags/latex/>LaTeX</a>
@@ -90,108 +78,75 @@ February 9, 2022
 <span class=separator>•</span>
 <span class=tag>
 <a href=/tags/ci/cd/>CI/CD</a>
-</span></div>
-</div>
-</header>
-<div>
-<p>In this project, I&rsquo;ve built an CI/CD workflow with GitHub Actions to automatically build and deploy my CV to GitHub Pages whenever it&rsquo;s updated.</p>
-<h5 id=docker-image-of-texlive>
+</span></div></div></header><div>
+<p>In this project, I&rsquo;ve built an CI/CD workflow with GitHub Actions to automatically build and deploy my CV to GitHub Pages whenever it&rsquo;s updated.</p><h5 id=docker-image-of-texlive>
 Docker Image of TeXLive
 <a class=heading-link href=#docker-image-of-texlive>
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
-</h5>
-<p>First of all, my CV is written in LaTeX the fundation of the workflow is building LaTeX files.
+</h5><p>First of all, my CV is written in LaTeX the fundation of the workflow is building LaTeX files.
 Thus an installation of TeXLive is needed as it&rsquo;s the standard TeX distribution.
 However, a TeXLive distribution is massive and takes at least 10s of minutes to install,
-and there is also the issue of the outdated TeX Live distribution that is available with Ubuntu&rsquo;s APT package manager.</p>
-<p>A Docker image of an up-to-date TeXLive installation is an apparent solution to these problems.
+and there is also the issue of the outdated TeX Live distribution that is available with Ubuntu&rsquo;s APT package manager.</p><p>A Docker image of an up-to-date TeXLive installation is an apparent solution to these problems.
 Although there is an existing <code>texlive/texlive</code> Docker image available on Docker Hub, a custom build is still desired for the optimal
-image size and more control over what is installed within the image.</p>
-<p>Therefore, the <a href=https://hub.docker.com/r/fulvwen/texlive>fulvwen/texlive</a> is created with the CI workflow setup from GitHub Action to build
+image size and more control over what is installed within the image.</p><p>Therefore, the <a href=https://hub.docker.com/r/fulvwen/texlive>fulvwen/texlive</a> is created with the CI workflow setup from GitHub Action to build
 and push the image to Docker Hub automatically.
 The repository <a href=https://github.com/lyuwen/docker-texlive>lyuwen/docker-texlive</a> contains all the necessary information including
 the <code>Dockerfile</code> and <code>texlive.profile</code> that defines the installed TeX packages, along with the GitHub Action configurations.
-In the end, a Docker image of less than 1GB is created with most of the common components required to build LaTeX files.</p>
-<p>Additionally, the script to install the TeXLive distribution can be find in the repository <a href=https://github.com/lyuwen/install-tl-ubuntu>lyuwen/install-tl-ubuntu</a>,
+In the end, a Docker image of less than 1GB is created with most of the common components required to build LaTeX files.</p><p>Additionally, the script to install the TeXLive distribution can be find in the repository <a href=https://github.com/lyuwen/install-tl-ubuntu>lyuwen/install-tl-ubuntu</a>,
 which is forked from <a href=https://github.com/scottkosty/install-tl-ubuntu>scottkosty/install-tl-ubuntu</a> and modified so
-it be used to install the latest distribution of TeXLive.</p>
-<h5 id=github-action-to-build-latex-files>
+it be used to install the latest distribution of TeXLive.</p><h5 id=github-action-to-build-latex-files>
 GitHub Action to build LaTeX files
 <a class=heading-link href=#github-action-to-build-latex-files>
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
-</h5>
-<p>For the purpose of making life easier, a Docker container GitHub Action is built to avoid redundant setup scripts to build.
+</h5><p>For the purpose of making life easier, a Docker container GitHub Action is built to avoid redundant setup scripts to build.
 With the Action <a href=https://github.com/lyuwen/build-latex-action>lyuwen/build-latex-action</a>, one can build a LaTeX source file into PDF
-with minimum setup needed:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>uses</span>: <span style=color:#ae81ff>lyuwen/build-latex-action@v1</span>
-<span style=color:#f92672>with</span>:
-  <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#39;main.tex&#39;</span>
-</code></pre></div><p>Initially, following the guide on <a href=https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action>creating a Docker container action</a>,
+with minimum setup needed:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>uses</span>: <span style=color:#ae81ff>lyuwen/build-latex-action@v1</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#39;main.tex&#39;</span>
+</span></span></code></pre></div><p>Initially, following the guide on <a href=https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action>creating a Docker container action</a>,
 an intermediate Docker image to the accommodate entry point script is setup to be created on the fly when the GitHub Action is used.
 However this build step takes nontrivial amount of time and should be avoided for efficiency, thus the
-intermediate Docker image is now built and pushed to GitHub Package Registry <a href="https://github.com/lyuwen/build-latex-action/pkgs/container/build-latex-action/14664436?tag=latest">ghcr.io/lyuwen/build-latex-action:latest</a>.</p>
-<h5 id=cicd-for-my-cv>
+intermediate Docker image is now built and pushed to GitHub Package Registry <a href="https://github.com/lyuwen/build-latex-action/pkgs/container/build-latex-action/14664436?tag=latest">ghcr.io/lyuwen/build-latex-action:latest</a>.</p><h5 id=cicd-for-my-cv>
 CI/CD for my CV
 <a class=heading-link href=#cicd-for-my-cv>
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
-</h5>
-<p>With all necessary components prepared, now it&rsquo;s time to setup the CI/CD workflow for my CV.
+</h5><p>With all necessary components prepared, now it&rsquo;s time to setup the CI/CD workflow for my CV.
 The goal in this project is to build the CV from LaTeX source into a PDF file whenever the repository receives new pushes
-and make the resulting PDF file available through GitHub Pages.</p>
-<p>My CV uses a custom made document class derived from the regular <code>article</code> document class.
+and make the resulting PDF file available through GitHub Pages.</p><p>My CV uses a custom made document class derived from the regular <code>article</code> document class.
 It is adapted from a XeLaTeX template <a href=https://github.com/zachscrivena/simple-resume-cv>zachscrivena/simple-resume-cv</a>,
-with significant modifications for a much simpler and more compact design.</p>
-<p>The workflow consists of the following parts:</p>
-<ul>
+with significant modifications for a much simpler and more compact design.</p><p>The workflow consists of the following parts:</p><ul>
 <li>
-<p>Check out the repository using standard <code>actions/checkout</code> action.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>- <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v2</span>
-</code></pre></div></li>
-<li>
-<p>Build LaTeX file with <code>lyuwen/build-latex-action</code> action.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>- <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>lyuwen/build-latex-action@v1</span>
-  <span style=color:#f92672>id</span>: <span style=color:#ae81ff>texbuild</span>
-  <span style=color:#f92672>with</span>:
-    <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#39;main.tex&#39;</span>
-</code></pre></div></li>
-<li>
-<p>Run a preparation script to copy the built PDF file and create a simple HTML index page into a directory for deployment.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Prepare for publish</span>
-  <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
-</span><span style=color:#e6db74>    mkdir public
-</span><span style=color:#e6db74>    cp ${{ steps.texbuild.outputs.output }} public/LFu_CV.pdf
-</span><span style=color:#e6db74>    cd public &amp;&amp; bash ../prepare_for_publish.sh</span>    
-</code></pre></div></li>
-<li>
-<p>Deploy the directory to GitHub Pages branch (<code>gh-pages</code>) of the repository using <code>peaceiris/actions-gh-pages</code> action.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy</span>
-  <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>peaceiris/actions-gh-pages@v3</span>
-  <span style=color:#f92672>if</span>: <span style=color:#ae81ff>github.ref == &#39;refs/heads/main&#39;</span>
-  <span style=color:#f92672>with</span>:
-    <span style=color:#f92672>github_token</span>: <span style=color:#ae81ff>${{ secrets.GITHUB_TOKEN }}</span>
-    <span style=color:#f92672>publish_dir</span>: <span style=color:#ae81ff>./public</span>
-</code></pre></div></li>
-<li>
-<p>Finally, just to keep a record, the built PDF file is attached to the build as a build artifact.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>- <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/upload-artifact@v2</span>
-  <span style=color:#f92672>with</span>:
-    <span style=color:#f92672>name</span>: <span style=color:#ae81ff>${{ steps.texbuild.outputs.output }}</span>
-    <span style=color:#f92672>path</span>: <span style=color:#ae81ff>${{ steps.texbuild.outputs.output }}</span>
-</code></pre></div></li>
-</ul>
-<p>Now, as the final result, the CV can be found <a href=https://www.lyuwenfu.me/lyuwen-cv/LFu_CV.pdf>here</a> with a simple index page
+<p>Check out the repository using standard <code>actions/checkout</code> action.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v2</span>
+</span></span></code></pre></div></li><li>
+<p>Build LaTeX file with <code>lyuwen/build-latex-action</code> action.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>lyuwen/build-latex-action@v1</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>id</span>: <span style=color:#ae81ff>texbuild</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>file</span>: <span style=color:#e6db74>&#39;main.tex&#39;</span>
+</span></span></code></pre></div></li><li>
+<p>Run a preparation script to copy the built PDF file and create a simple HTML index page into a directory for deployment.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Prepare for publish</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    mkdir public
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    cp ${{ steps.texbuild.outputs.output }} public/LFu_CV.pdf
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    cd public &amp;&amp; bash ../prepare_for_publish.sh</span>    
+</span></span></code></pre></div></li><li>
+<p>Deploy the directory to GitHub Pages branch (<code>gh-pages</code>) of the repository using <code>peaceiris/actions-gh-pages</code> action.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>peaceiris/actions-gh-pages@v3</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>if</span>: <span style=color:#ae81ff>github.ref == &#39;refs/heads/main&#39;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>github_token</span>: <span style=color:#ae81ff>${{ secrets.GITHUB_TOKEN }}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>publish_dir</span>: <span style=color:#ae81ff>./public</span>
+</span></span></code></pre></div></li><li>
+<p>Finally, just to keep a record, the built PDF file is attached to the build as a build artifact.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/upload-artifact@v2</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>name</span>: <span style=color:#ae81ff>${{ steps.texbuild.outputs.output }}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>path</span>: <span style=color:#ae81ff>${{ steps.texbuild.outputs.output }}</span>
+</span></span></code></pre></div></li></ul><p>Now, as the final result, the CV can be found <a href=https://www.lyuwenfu.me/lyuwen-cv/LFu_CV.pdf>here</a> with a simple index page
 available <a href=https://www.lyuwenfu.me/lyuwen-cv/>here</a> that shows the time in UTC when the latest CV is built.
-The CV project repository is available in <a href=https://github.com/lyuwen/lyuwen-cv>lyuwen/lyuwen-cv</a>.</p>
-</div>
-<footer>
-</footer>
-</article>
-</section>
-</div>
-<footer class=footer>
+The CV project repository is available in <a href=https://github.com/lyuwen/lyuwen-cv>lyuwen/lyuwen-cv</a>.</p></div><footer>
+</footer></article></section></div><footer class=footer>
 <section class=container>
 ©
 2021 -
@@ -199,11 +154,7 @@ The CV project repository is available in <a href=https://github.com/lyuwen/lyuw
 Lyuwen Fu
 ·
 Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.
-</section>
-</footer>
-</main>
-<script src=/js/coder.min.39a51230dce2ac866c049b52573e38bf60666af4bc63c1bdf203b9b2d95b1cd6.js integrity="sha256-OaUSMNzirIZsBJtSVz44v2BmavS8Y8G98gO5stlbHNY="></script>
+</section></footer></main><script src=/js/coder.min.8fb86376a16e684af472a329aef502dbebcfab65ce264e9750d144912947c602.js integrity="sha256-j7hjdqFuaEr0cqMprvUC2+vPq2XOJk6XUNFEkSlHxgI="></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7C7Y626LWM"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-7C7Y626LWM',{anonymize_ip:!1})}</script>
-</body>
-</html>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-7C7Y626LWM",{anonymize_ip:!1})}</script>
+</body></html>
