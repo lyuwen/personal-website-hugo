@@ -13,7 +13,8 @@ at Columbia University.
 We are currently developing a highly optimized software that executes the methodologies described in the [paper](https://link.aps.org/doi/10.1103/PhysRevB.100.014303)
 we published. It will be released soon. Stay tuned.
 
-My CV can be found [here](https://www.lyuwenfu.me/lyuwen-cv/LFu_CV.pdf).
+My CV can be found [here](https://www.lyuwenfu.me/lyuwen-cv/LFu_CV.pdf),
+and my Chinese CV is available [here](https://www.lyuwenfu.me/lyuwen-cv/LFu_CV_cn.pdf).
 
 
 #### Education
