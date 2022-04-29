@@ -1,125 +1,34 @@
-<!doctype html><html lang=en>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=content-language content="en">
-<meta name=color-scheme content="light dark">
-<meta name=author content="Lyuwen Fu">
-<meta name=description content="Principia Materia (PM) is a materials computation and simulation package started with my advisor Prof. Chris Marianetti during my doctoral research.
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=content-language content="en"><meta name=color-scheme content="light dark"><meta name=author content="Lyuwen Fu"><meta name=description content="Principia Materia (PM) is a materials computation and simulation package started with my advisor Prof. Chris Marianetti during my doctoral research.
 With a codebase of around 20 thousand lines, the object oriented software package is optimized with over 10$\times$ improvements on time complexity comparing to the existing software while computing at the same level of precision.
-Although our work emphasizes on the computation of phonons and phonon interactions as well as the prediction of materials thermodynamic and transport properties, the modular design of the package allows its individual parts to be used in a variety materials studies, including the electronic properties of materials, symmetry analysis of other materials properties, etc.">
-<meta name=keywords content="blog,developer,personal">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Principia Materia">
-<meta name=twitter:description content="Principia Materia (PM) is a materials computation and simulation package started with my advisor Prof. Chris Marianetti during my doctoral research.
+Although our work emphasizes on the computation of phonons and phonon interactions as well as the prediction of materials thermodynamic and transport properties, the modular design of the package allows its individual parts to be used in a variety materials studies, including the electronic properties of materials, symmetry analysis of other materials properties, etc."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="Principia Materia"><meta name=twitter:description content="Principia Materia (PM) is a materials computation and simulation package started with my advisor Prof. Chris Marianetti during my doctoral research.
 With a codebase of around 20 thousand lines, the object oriented software package is optimized with over 10$\times$ improvements on time complexity comparing to the existing software while computing at the same level of precision.
-Although our work emphasizes on the computation of phonons and phonon interactions as well as the prediction of materials thermodynamic and transport properties, the modular design of the package allows its individual parts to be used in a variety materials studies, including the electronic properties of materials, symmetry analysis of other materials properties, etc.">
-<meta property="og:title" content="Principia Materia">
-<meta property="og:description" content="Principia Materia (PM) is a materials computation and simulation package started with my advisor Prof. Chris Marianetti during my doctoral research.
+Although our work emphasizes on the computation of phonons and phonon interactions as well as the prediction of materials thermodynamic and transport properties, the modular design of the package allows its individual parts to be used in a variety materials studies, including the electronic properties of materials, symmetry analysis of other materials properties, etc."><meta property="og:title" content="Principia Materia"><meta property="og:description" content="Principia Materia (PM) is a materials computation and simulation package started with my advisor Prof. Chris Marianetti during my doctoral research.
 With a codebase of around 20 thousand lines, the object oriented software package is optimized with over 10$\times$ improvements on time complexity comparing to the existing software while computing at the same level of precision.
-Although our work emphasizes on the computation of phonons and phonon interactions as well as the prediction of materials thermodynamic and transport properties, the modular design of the package allows its individual parts to be used in a variety materials studies, including the electronic properties of materials, symmetry analysis of other materials properties, etc.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://lyuwenfu.me/posts/principia-materia/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2022-01-01T00:00:00+00:00">
-<meta property="article:modified_time" content="2022-01-01T00:00:00+00:00">
-<title>
-Principia Materia · Lyuwen Fu
-</title><link rel=canonical href=https://lyuwenfu.me/posts/principia-materia/>
-<link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin>
-<link rel=stylesheet href=/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css integrity="sha256-2f3b/+byfmmYXcX+BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin=anonymous media=screen>
-<link rel=stylesheet href=/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin=anonymous media=screen>
-<link rel=icon type=image/png href=/images/lfu_logo_web@32.png sizes=32x32>
-<link rel=icon type=image/png href=/images/lfu_logo_web@16.png sizes=16x16>
-<link rel=apple-touch-icon href=/images/lfu_logo_web@144.png>
-<link rel=apple-touch-icon sizes=180x180 href=/images/lfu_logo_web@144.png>
-<meta name=generator content="Hugo 0.93.2">
-</head><body class="preload-transitions colorscheme-auto">
-<div class=float-container>
-<a id=dark-mode-toggle class=colorscheme-toggle>
-<i class="fa fa-adjust fa-fw" aria-hidden=true></i>
-</a>
-</div><main class=wrapper>
-<nav class=navigation>
-<section class=container>
-<a class=navigation-title href=/>
-Lyuwen Fu
-</a>
+Although our work emphasizes on the computation of phonons and phonon interactions as well as the prediction of materials thermodynamic and transport properties, the modular design of the package allows its individual parts to be used in a variety materials studies, including the electronic properties of materials, symmetry analysis of other materials properties, etc."><meta property="og:type" content="article"><meta property="og:url" content="https://lyuwenfu.me/posts/principia-materia/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-01-01T00:00:00+00:00"><meta property="article:modified_time" content="2022-01-01T00:00:00+00:00"><title>Principia Materia · Lyuwen Fu</title><link rel=canonical href=https://lyuwenfu.me/posts/principia-materia/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css integrity="sha256-2f3b/+byfmmYXcX+BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/lfu_logo_web@32.png sizes=32x32><link rel=icon type=image/png href=/images/lfu_logo_web@16.png sizes=16x16><link rel=apple-touch-icon href=/images/lfu_logo_web@144.png><link rel=apple-touch-icon sizes=180x180 href=/images/lfu_logo_web@144.png><meta name=generator content="Hugo 0.98.0"></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Lyuwen Fu</a>
 <input type=checkbox id=menu-toggle>
-<label class="menu-button float-right" for=menu-toggle>
-<i class="fa fa-bars fa-fw" aria-hidden=true></i>
-</label>
-<ul class=navigation-list>
-<li class=navigation-item>
-<a class=navigation-link href=/posts/>Projects</a>
-</li><li class=navigation-item>
-<a class=navigation-link href=/about/>About</a>
-</li></ul></section></nav><div class=content>
-<section class="container post">
-<article>
-<header>
-<div class=post-title>
-<h1 class=title>
-<a class=title-link href=https://lyuwenfu.me/posts/principia-materia/>
-Principia Materia
-</a>
-</h1></div><div class=post-meta>
-<div class=date>
-<span class=posted-on>
-<i class="fa fa-calendar" aria-hidden=true></i>
-<time datetime=2022-01-01T00:00:00Z>
-January 1, 2022
-</time>
-</span>
-<span class=reading-time>
-<i class="fa fa-clock-o" aria-hidden=true></i>
-One-minute read
-</span>
-</div><div class=authors>
-<i class="fa fa-user" aria-hidden=true></i>
-<a href=/authors/lyuwen-fu/>Lyuwen Fu</a></div><div class=tags>
-<i class="fa fa-tag" aria-hidden=true></i>
-<span class=tag>
-<a href=/tags/first-principles/>First-Principles</a>
-</span>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Projects</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://lyuwenfu.me/posts/principia-materia/>Principia Materia</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
+<time datetime=2022-01-01T00:00:00Z>January 1, 2022</time></span>
+<span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
+One-minute read</span></div><div class=authors><i class="fa fa-user" aria-hidden=true></i>
+<a href=/authors/lyuwen-fu/>Lyuwen Fu</a></div><div class=tags><i class="fa fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/tags/first-principles/>First-Principles</a></span>
 <span class=separator>•</span>
-<span class=tag>
-<a href=/tags/group-theory/>Group Theory</a>
-</span>
+<span class=tag><a href=/tags/group-theory/>Group Theory</a></span>
 <span class=separator>•</span>
-<span class=tag>
-<a href=/tags/phonons/>Phonons</a>
-</span>
+<span class=tag><a href=/tags/phonons/>Phonons</a></span>
 <span class=separator>•</span>
-<span class=tag>
-<a href=/tags/phonon-interactions/>Phonon Interactions</a>
-</span>
+<span class=tag><a href=/tags/phonon-interactions/>Phonon Interactions</a></span>
 <span class=separator>•</span>
-<span class=tag>
-<a href=/tags/materials-science/>Materials Science</a>
-</span></div></div></header><div>
-<img src=/images/pm_banner_web.png alt="Featured image">
-<p>Principia Materia (PM) is a materials computation and simulation package started with my advisor <strong>Prof. Chris Marianetti</strong> during my doctoral research.</p><p>With a codebase of around 20 thousand lines, the object oriented software package is optimized with over 10$\times$ improvements on time complexity comparing
+<span class=tag><a href=/tags/materials-science/>Materials Science</a></span></div></div></header><div><img src=/images/pm_banner_web.png alt="Featured image"><p>Principia Materia (PM) is a materials computation and simulation package started with my advisor <strong>Prof. Chris Marianetti</strong> during my doctoral research.</p><p>With a codebase of around 20 thousand lines, the object oriented software package is optimized with over 10$\times$ improvements on time complexity comparing
 to the existing software while computing at the same level of precision.</p><p>Although our work emphasizes on the computation of phonons and phonon interactions as well as the prediction of materials thermodynamic and transport
 properties, the modular design of the package allows its individual parts to be used in a variety materials studies, including the electronic properties
-of materials, symmetry analysis of other materials properties, etc.</p><p>Currently, we are working on the final preparation of the open source release of the package, while the documentation is already available for reference. Stay tuned.</p><h5 id=references>
-References:
-<a class=heading-link href=#references>
-<i class="fa fa-link" aria-hidden=true></i>
-</a>
-</h5><ul>
-<li><a href=//chrismarianetti.org>Prof. Chris Marianetti&rsquo;s website</a>.</li><li><a href=//marianettigroup.github.io>The documentation of PM package</a>.</li><li><a href=//doi.org/10.1103/PhysRevB.100.014303>The paper of the theory behind the package</a>.</li></ul></div><footer>
-</footer></article><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}]})'></script>
-</section></div><footer class=footer>
-<section class=container>
-©
+of materials, symmetry analysis of other materials properties, etc.</p><p>Currently, we are working on the final preparation of the open source release of the package, while the documentation is already available for reference. Stay tuned.</p><h5 id=references>References:
+<a class=heading-link href=#references><i class="fa fa-link" aria-hidden=true></i></a></h5><ul><li><a href=//chrismarianetti.org>Prof. Chris Marianetti&rsquo;s website</a>.</li><li><a href=//marianettigroup.github.io>The documentation of PM package</a>.</li><li><a href=//doi.org/10.1103/PhysRevB.100.014303>The paper of the theory behind the package</a>.</li></ul></div><footer></footer></article><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}]})'></script></section></div><footer class=footer><section class=container>©
 2021 -
 2022
 Lyuwen Fu
 ·
-Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.
-</section></footer></main><script src=/js/coder.min.8fb86376a16e684af472a329aef502dbebcfab65ce264e9750d144912947c602.js integrity="sha256-j7hjdqFuaEr0cqMprvUC2+vPq2XOJk6XUNFEkSlHxgI="></script>
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/coder.min.8fb86376a16e684af472a329aef502dbebcfab65ce264e9750d144912947c602.js integrity="sha256-j7hjdqFuaEr0cqMprvUC2+vPq2XOJk6XUNFEkSlHxgI="></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7C7Y626LWM"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-7C7Y626LWM",{anonymize_ip:!1})}</script>
-</body></html>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-7C7Y626LWM",{anonymize_ip:!1})}</script></body></html>
