@@ -7,14 +7,21 @@ draft: false
 
 ### About me
 
-I just earned my Ph.D. degree working with my advisor [Prof. Chris Marianetti](http://www.chrismarianetti.org)
+I am currently working as a senior research scientist in the Center for Intelligent Computing at Zhejiang Lab,
+after earning my Ph.D. degree working with my advisor [Prof. Chris Marianetti](http://www.chrismarianetti.org)
 on [Thermodynamics of Interacting Phonons](https://doi.org/10.7916/d8-wkbr-m336)
 at Columbia University.
-We are currently developing a highly optimized software that executes the methodologies described in the [paper](https://link.aps.org/doi/10.1103/PhysRevB.100.014303)
+Currently, among all the research in intelegent computing, super computing and materials science,
+we are developing a highly optimized software that executes the methodologies described in the [paper](https://link.aps.org/doi/10.1103/PhysRevB.100.014303)
 we published. It will be released soon. Stay tuned.
 
 My CV can be found [here](https://www.lyuwenfu.me/lyuwen-cv/LFu_CV.pdf),
 and my Chinese CV is available [here](https://www.lyuwenfu.me/lyuwen-cv/LFu_CV_cn.pdf).
+
+
+#### Experience
+
+- **Zhejiang Lab**, Hangzhou, Zhejiang {{< right >}} Jul 2022 - Present {{< /right >}}
 
 
 #### Education
