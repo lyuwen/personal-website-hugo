@@ -67,7 +67,7 @@ and my Chinese CV is available [here](https://www.lyuwenfu.me/lyuwen-cv/LFu_CV_c
 - M. A. Mathis, A. Khanolkar, \underline{L. Fu}, et al. (2022).  Generalized Quasiharmonic Approximation via Space Group Irreducible Derivatives, _Phys. Rev. B_ 106, 144310.  [[link](https://link.aps.org/doi/10.1103/PhysRevB.106.144310)]
 
 
-%% #### Submitted for publication
-%% - E. Xiao, H. Ma, M. S. Bryan, \underline{L. Fu}, et al. (2022).  Validating First-Principles Phonon Lifetimes via Inelastic Neutron Scattering, arXiv:2202.11041.  [[link](https://arxiv.org/abs/2202.11041)]
-%% - M. A. Mathis, A. Khanolkar, \underline{L. Fu}, et al. (2022).  The Generalized Quasiharmonic Approximation via Space Group Irreducible Derivatives, arXiv:2202.14016.  [[link](https://arxiv.org/abs/2202.14016)]
+<!-- #### Submitted for publication -->
+<!-- - E. Xiao, H. Ma, M. S. Bryan, \underline{L. Fu}, et al. (2022).  Validating First-Principles Phonon Lifetimes via Inelastic Neutron Scattering, arXiv:2202.11041.  [[link](https://arxiv.org/abs/2202.11041)] -->
+<!-- - M. A. Mathis, A. Khanolkar, \underline{L. Fu}, et al. (2022).  The Generalized Quasiharmonic Approximation via Space Group Irreducible Derivatives, arXiv:2202.14016.  [[link](https://arxiv.org/abs/2202.14016)] -->
 
