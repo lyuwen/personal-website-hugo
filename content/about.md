@@ -63,9 +63,11 @@ and my Chinese CV is available [here](https://www.lyuwenfu.me/lyuwen-cv/LFu_CV_c
 - X. Ding, T. Yao, **L. Fu**, Z. Hua, J. Harp, C.A. Marianetti, M. Neupane, M.E. Manley, D. Hurley, and K. Gofryk, Magnetic, transport and thermal properties of 𝛿-phase UZr2, _Phil. Mag. Lett._, 101(1), 1-11 (2020). [[link](https://doi.org/10.1080/09500839.2020.1833375)]
 - M.S. Bryan, **L. Fu**, K. Rickert, D. Turner, T.A. Prusnick, J.M. Mann, D.L. Abernathy, C.A. Marianetti , and M.E. Manley, Nonlinear Vibrations Beyond the Phonons in Fluorite-Structured Crystals, _Nat. Comm. Phys._, 3(1), 1-7 (2020). [[link](https://doi.org/10.1038/s42005-020-00483-2)]
 - C.A. Dennett, W.R. Deskins, M. Khafizov, Z. Hua, A. Khanolkar, K. Bawane, **L. Fu**, J.M. Mann, C.A. Marianetti, L. He, D.H. Hurley, A. El-Azab, An Integrated Experimental and Computational Investigation of Defect and Microstructural Effects on Thermal Transport in Thorium Dioxide, _Acta Mater._, 213, 116934, (2021). [[link](https://doi.org/10.1016/j.actamat.2021.116934)]
+- E. Xiao, H. Ma, M. S. Bryan, \underline{L. Fu}, et al. (2022).  Validating First-Principles Phonon Lifetimes via Inelastic Neutron Scattering, _Phys. Rev. B_ 106, 014314.  [[link](https://link.aps.org/doi/10.1103/PhysRevB.106.014314)]
+- M. A. Mathis, A. Khanolkar, \underline{L. Fu}, et al. (2022).  Generalized Quasiharmonic Approximation via Space Group Irreducible Derivatives, _Phys. Rev. B_ 106, 144310.  [[link](https://link.aps.org/doi/10.1103/PhysRevB.106.144310)]
 
 
-#### Submitted for publication
-- E. Xiao, H. Ma, M. S. Bryan, \underline{L. Fu}, et al. (2022).  Validating First-Principles Phonon Lifetimes via Inelastic Neutron Scattering, arXiv:2202.11041.  [[link](https://arxiv.org/abs/2202.11041)]
-- M. A. Mathis, A. Khanolkar, \underline{L. Fu}, et al. (2022).  The Generalized Quasiharmonic Approximation via Space Group Irreducible Derivatives, arXiv:2202.14016.  [[link](https://arxiv.org/abs/2202.14016)]
+%% #### Submitted for publication
+%% - E. Xiao, H. Ma, M. S. Bryan, \underline{L. Fu}, et al. (2022).  Validating First-Principles Phonon Lifetimes via Inelastic Neutron Scattering, arXiv:2202.11041.  [[link](https://arxiv.org/abs/2202.11041)]
+%% - M. A. Mathis, A. Khanolkar, \underline{L. Fu}, et al. (2022).  The Generalized Quasiharmonic Approximation via Space Group Irreducible Derivatives, arXiv:2202.14016.  [[link](https://arxiv.org/abs/2202.14016)]
 
