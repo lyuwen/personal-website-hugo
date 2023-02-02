@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "lyuwenfu.me",
+  "Id": "3b170fde-26ef-4dea-a90b-d369815c8d72"
+}
