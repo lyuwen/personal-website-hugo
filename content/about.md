@@ -1,22 +1,20 @@
 ---
 title: "About"
-date: 2021-10-20T18:26:44+08:00
+date: 2026-01-30T22:39:44+08:00
 draft: false
 ---
 
 
-### About me
+I am currently working as a LLM algorithm engineer at Zhejiang Lab.
 
-I am currently working as a senior research scientist in the Center for Intelligent Computing at Zhejiang Lab,
-after earning my Ph.D. degree working with my advisor [Prof. Chris Marianetti](http://www.chrismarianetti.org)
+I earned my Ph.D. degree working with my advisor [Prof. Chris Marianetti](http://www.chrismarianetti.org)
 on [Thermodynamics of Interacting Phonons](https://doi.org/10.7916/d8-wkbr-m336)
 at Columbia University.
 Currently, among all the research in intelegent computing, super computing and materials science,
 we are developing a highly optimized software that executes the methodologies described in the [paper](https://link.aps.org/doi/10.1103/PhysRevB.100.014303)
-we published. It will be released soon. Stay tuned.
+we published. It will be released soon. 
 
-My CV can be found [here](https://www.lyuwenfu.me/lyuwen-cv/LFu_CV.pdf),
-and my Chinese CV is available [here](https://www.lyuwenfu.me/lyuwen-cv/LFu_CV_cn.pdf).
+Stay tuned.
 
 
 #### Experience
@@ -65,9 +63,4 @@ and my Chinese CV is available [here](https://www.lyuwenfu.me/lyuwen-cv/LFu_CV_c
 - C.A. Dennett, W.R. Deskins, M. Khafizov, Z. Hua, A. Khanolkar, K. Bawane, **L. Fu**, J.M. Mann, C.A. Marianetti, L. He, D.H. Hurley, A. El-Azab, An Integrated Experimental and Computational Investigation of Defect and Microstructural Effects on Thermal Transport in Thorium Dioxide, _Acta Mater._, 213, 116934, (2021). [[link](https://doi.org/10.1016/j.actamat.2021.116934)]
 - E. Xiao, H. Ma, M. S. Bryan, **L. Fu**, et al. (2022).  Validating First-Principles Phonon Lifetimes via Inelastic Neutron Scattering, _Phys. Rev. B_ 106, 014314.  [[link](https://link.aps.org/doi/10.1103/PhysRevB.106.014314)]
 - M. A. Mathis, A. Khanolkar, **L. Fu**, et al. (2022).  Generalized Quasiharmonic Approximation via Space Group Irreducible Derivatives, _Phys. Rev. B_ 106, 144310.  [[link](https://link.aps.org/doi/10.1103/PhysRevB.106.144310)]
-
-
-<!-- #### Submitted for publication -->
-<!-- - E. Xiao, H. Ma, M. S. Bryan, \underline{L. Fu}, et al. (2022).  Validating First-Principles Phonon Lifetimes via Inelastic Neutron Scattering, arXiv:2202.11041.  [[link](https://arxiv.org/abs/2202.11041)] -->
-<!-- - M. A. Mathis, A. Khanolkar, \underline{L. Fu}, et al. (2022).  The Generalized Quasiharmonic Approximation via Space Group Irreducible Derivatives, arXiv:2202.14016.  [[link](https://arxiv.org/abs/2202.14016)] -->
 
